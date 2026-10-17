@@ -1,0 +1,29 @@
+name: Render Stick Figure Video
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+          npm install --no-audit --no-fund
+      - name: Prepare scenes
+        run: npm run prepare-video
+      - name: Render MP4
+        run: npm run render
+      - name: Upload MP4
+        uses: actions/upload-artifact@v4
+        with:
+          name: finished-stick-video
+          path: out/video.mp4
+          retention-days: 7
