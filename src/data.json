@@ -1,0 +1,24 @@
+{
+  "fps": 24,
+  "frames": 720,
+  "scenes": [
+    {
+      "text": "Welcome to our Stick Figure Animation!",
+      "start": 0,
+      "duration": 240,
+      "variant": 0
+    },
+    {
+      "text": "Learn how money works.",
+      "start": 240,
+      "duration": 240,
+      "variant": 1
+    },
+    {
+      "text": "Small decisions can create big results.",
+      "start": 480,
+      "duration": 240,
+      "variant": 2
+    }
+  ]
+}
