@@ -1,1 +1,16 @@
-remotion render src/index.jsx Main out/video.mp4 --codec h264 --concurrency 2
+{
+  "name": "stick-video-mobile",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "prepare-video": "node prepare.mjs",
+    "render": "remotion render src/index.jsx Main out/video.mp4 --codec h264 --concurrency 2"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.332",
+    "remotion": "4.0.332",
+    "react": "19.0.0",
+    "react-dom": "19.0.0"
+  }
+}
