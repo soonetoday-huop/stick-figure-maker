@@ -1,1 +1,16 @@
-remotion render src/index.jsx HistoryVideo out/video.mp4 --codec h264
+import {Composition} from 'remotion';
+import {MyComposition} from './Composition';
+
+export const Root = () => {
+  return (
+    <Composition
+      id="DarkNarrativeVideo"
+      component={MyComposition}
+      durationInFrames={1200} // वीडियो की कुल लंबाई (फ्रेम्स में)
+      fps={30}
+      width={1920}
+      height={1080}
+    />
+  );
+};
+
