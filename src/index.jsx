@@ -14,7 +14,7 @@ function StickFigure({frame}) {
   </svg>;
 }
 
-function Video() {
+export function Video() {() {
   const frame=useCurrentFrame();
   const {fps}=useVideoConfig();
   const scene=data.scenes.find(s=>frame>=s.start && frame<s.start+s.duration) || data.scenes[data.scenes.length-1];
