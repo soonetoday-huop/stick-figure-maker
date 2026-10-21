@@ -1,24 +1,37 @@
+
 {
-  "fps": 24,
-  "frames": 720,
+  "fps": 30,
+  "frames": 45000,
   "scenes": [
     {
-      "text": "Welcome to our Stick Figure Animation!",
+      "text": "A Poor Man Who Becomes a Millionaire",
       "start": 0,
-      "duration": 240,
+      "duration": 300,
       "variant": 0
     },
     {
-      "text": "Learn how money works.",
-      "start": 240,
-      "duration": 240,
+      "text": "A Life Full of Struggles",
+      "start": 300,
+      "duration": 300,
       "variant": 1
     },
     {
-      "text": "Small decisions can create big results.",
-      "start": 480,
-      "duration": 240,
+      "text": "A Small Opportunity",
+      "start": 600,
+      "duration": 300,
       "variant": 2
+    },
+    {
+      "text": "The First Difficult Decision",
+      "start": 900,
+      "duration": 300,
+      "variant": 0
+    },
+    {
+      "text": "Learning the Value of Money",
+      "start": 1200,
+      "duration": 300,
+      "variant": 1
     }
   ]
 }
