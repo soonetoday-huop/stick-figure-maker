@@ -1,16 +1,18 @@
-import {Composition} from 'remotion';
-import {MyComposition} from './Composition';
+
+import { Composition } from 'remotion';
+import { Video } from './index';
 
 export const Root = () => {
   return (
     <Composition
-      id="DarkNarrativeVideo"
-      component={MyComposition}
-      durationInFrames={45000} // वीडियो की कुल लंबाई (फ्रेम्स में)
+      id="Main"
+      component={Video}
+      durationInFrames={45000}
       fps={30}
       width={1920}
       height={1080}
     />
   );
 };
+
 
